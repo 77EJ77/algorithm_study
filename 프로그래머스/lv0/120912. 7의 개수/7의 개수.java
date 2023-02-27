@@ -3,11 +3,10 @@ class Solution {
         int answer = 0;
         for(int i = 0; i < array.length; i++){
             int temp = array[i];
-            while(temp > 10){
+            while(temp > 0){
                 if(temp % 10 == 7) answer++;
                 temp /= 10;
             }
-            if(temp == 7) answer++;
         }
         return answer;
     }
